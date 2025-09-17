@@ -18,7 +18,7 @@ interface LogoProps extends React.HTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
 }
 
-interface LogoImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+interface LogoImageProps {
   src: string;
   alt: string;
   className?: string;
@@ -96,18 +96,17 @@ const Logo = ({ url, className, children, ...props }: LogoProps) => {
   );
 };
 
-const LogoImage = ({ src, alt, className, ...props }: LogoImageProps) => (
-  <Image src={src} alt={alt} width={32} height={32} className={cn("block h-8", className)} {...props} />
+const LogoImage = ({ src, alt, className }: LogoImageProps) => (
+  <Image src={src} alt={alt} width={32} height={32} className={cn("block h-8", className)} />
 );
 
-const LogoImageMobile = ({ src, alt, className, ...props }: LogoImageProps) => (
+const LogoImageMobile = ({ src, alt, className }: LogoImageProps) => (
   <Image
     src={src}
     alt={alt}
     width={32}
     height={32}
     className={cn("flex h-8 md:hidden", className)}
-    {...props}
   />
 );
 
@@ -115,7 +114,6 @@ const LogoImageDesktop = ({
   src,
   alt,
   className,
-  ...props
 }: LogoImageProps) => (
   <Image
     src={src}
@@ -123,7 +121,6 @@ const LogoImageDesktop = ({
     width={32}
     height={32}
     className={cn("hidden h-8 md:flex", className)}
-    {...props}
   />
 );
 
