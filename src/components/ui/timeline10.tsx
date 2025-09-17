@@ -23,7 +23,7 @@ const Timeline10 = () => {
       id: 1,
       date: "Step 2",
       title: "Chat Away",
-      description: "Once you've found or made your match, it's time to ",
+      description: "Once you&apos;ve found or made your match, it&apos;s time to ",
       linkText: "Dirty talk with AI",
       descriptionEnd: "! Engage in cheeky banter, share your desires, or explore your wildest fantasies. Whether you&apos;re in the mood for sweet pillow talk or something spicier, your companion is ready to play along.",
     },
@@ -41,7 +41,7 @@ const Timeline10 = () => {
     <section className="py-24">
       <div className="container flex flex-col items-center">
         <h2 className="relative z-20 py-2 text-center font-sans text-5xl font-semibold tracking-tighter md:py-7 lg:text-5xl">
-          How Atale.ai's NSFW AI Chat Works
+          How Atale.ai&apos;s NSFW AI Chat Works
         </h2>
         <Card className="relative w-auto border-none shadow-none bg-transparent md:py-16">
           <CardContent className="p-0">

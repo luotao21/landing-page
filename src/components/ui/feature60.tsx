@@ -22,9 +22,9 @@ const Feature60 = () => {
                 An AI That Truly Gets You
               </h3>
               <p className="text-muted-foreground lg:text-lg">
-                If you thought AI chat was predictable, prepare to be surprised. This is where conversations leave the mundane behind, guiding you to explore your bolder side. You'll discover our <a href="https://atale.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Sex Chat</a> feature is more than just code; it's a companion that knows exactly how to respond, whether you're in the mood for playful banter or crave more mature dialogue.              <br />
+                If you thought AI chat was predictable, prepare to be surprised. This is where conversations leave the mundane behind, guiding you to explore your bolder side. You&apos;ll discover our <a href="https://atale.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Sex Chat</a> feature is more than just code; it&apos;s a companion that knows exactly how to respond, whether you&apos;re in the mood for playful banter or crave more mature dialogue.              <br />
               <br />
-               You’ll experience how a simple hint can blossom into an intimate tease. From there, the tone naturally evolves—becoming hotter and deeply personal. The magic of this experience lies not just in the alluring content, but in its keen responsiveness to your every nuance, creating an immersive connection that’s hard to pull away from.              </p>
+               You&apos;ll experience how a simple hint can blossom into an intimate tease. From there, the tone naturally evolves—becoming hotter and deeply personal. The magic of this experience lies not just in the alluring content, but in its keen responsiveness to your every nuance, creating an immersive connection that&apos;s hard to pull away from.              </p>
             </div>
           </div>
         </div>
