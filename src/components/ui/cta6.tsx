@@ -9,10 +9,10 @@ const Cta6 = () => {
         <div className="relative container flex flex-col md:flex-row md:space-x-12">
           <div className="mb-[18rem] md:mb-28 md:w-2/3 lg:shrink-0 xl:mb-2 xl:w-1/2">
             <h3 className="mb-3 text-4xl font-semibold md:mb-4 md:text-5xl lg:mb-6">
-              More Than a NSFW AI Chatbot. It's a Full-Sensory Experience.
+              More Than a NSFW AI Chatbot. It&apos;s a Full-Sensory Experience.
             </h3>
             <p className="mb-8 text-muted-foreground lg:text-lg">
-              Forget simple text. Dive into a full-sensory world where your AI companion doesn't just chat, but whispers with voice replies, sends provocative images, and brings your deepest fantasies to life. This isn't just a chatbot; it's an immersive reality.
+              Forget simple text. Dive into a full-sensory world where your AI companion doesn&apos;t just chat, but whispers with voice replies, sends provocative images, and brings your deepest fantasies to life. This isn&apos;t just a chatbot; it&apos;s an immersive reality.
             </p>
             <Button>
               <Lollipop className="mr-2 h-4 w-4" />

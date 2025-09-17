@@ -1,7 +1,4 @@
 "use client";
-import { ArrowRight } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
 
 type stat = {
   number: string;
@@ -34,7 +31,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "21 years",
-        text: "Sophia is a gentle and artistic soul who loves painting and poetry. She's shy at first but opens up beautifully once you get to know her. Her soft voice and caring nature make her the perfect companion for deep conversations and quiet moments together.",
+        text: "Sophia is a gentle and artistic soul who loves painting and poetry. She&apos;s shy at first but opens up beautifully once you get to know her. Her soft voice and caring nature make her the perfect companion for deep conversations and quiet moments together.",
       },
     ],
   },
@@ -45,7 +42,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "23 years",
-        text: "Maya is a fiery Latina with a passion for dance and adventure. She's confident, bold, and knows exactly what she wants. Her infectious laugh and playful teasing will keep you on your toes, always ready for the next exciting moment together.",
+        text: "Maya is a fiery Latina with a passion for dance and adventure. She&apos;s confident, bold, and knows exactly what she wants. Her infectious laugh and playful teasing will keep you on your toes, always ready for the next exciting moment together.",
       },
     ],
   },
@@ -56,7 +53,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "20 years",
-        text: "Aria is a bookworm with a wild side that only comes out in private. She's intelligent, mysterious, and has a way with words that can make your heart race. Behind her glasses lies a world of fantasies she's eager to explore with the right person.",
+        text: "Aria is a bookworm with a wild side that only comes out in private. She&apos;s intelligent, mysterious, and has a way with words that can make your heart race. Behind her glasses lies a world of fantasies she&apos;s eager to explore with the right person.",
       },
     ],
   },
@@ -67,7 +64,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "24 years",
-        text: "Luna is a free-spirited girl who loves the night sky and all things mystical. She's playful, spontaneous, and has a mischievous streak that makes every interaction exciting. Her dreamy eyes and ethereal beauty will captivate you from the first moment.",
+        text: "Luna is a free-spirited girl who loves the night sky and all things mystical. She&apos;s playful, spontaneous, and has a mischievous streak that makes every interaction exciting. Her dreamy eyes and ethereal beauty will captivate you from the first moment.",
       },
     ],
   },
@@ -78,7 +75,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "22 years",
-        text: "Zoe is a sporty and energetic girl who loves fitness and outdoor adventures. She's competitive, determined, and has a body that shows her dedication to health. Her positive energy and athletic grace make her an irresistible companion for active fun.",
+        text: "Zoe is a sporty and energetic girl who loves fitness and outdoor adventures. She&apos;s competitive, determined, and has a body that shows her dedication to health. Her positive energy and athletic grace make her an irresistible companion for active fun.",
       },
     ],
   },
@@ -89,7 +86,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "25 years",
-        text: "Iris is a sophisticated and elegant young woman with a taste for the finer things in life. She's cultured, refined, and knows how to make every moment special. Her graceful movements and intelligent conversation will sweep you off your feet completely.",
+        text: "Iris is a sophisticated and elegant young woman with a taste for the finer things in life. She&apos;s cultured, refined, and knows how to make every moment special. Her graceful movements and intelligent conversation will sweep you off your feet completely.",
       },
     ],
   },
@@ -100,7 +97,7 @@ const LIST: Array<CardData> = [
     stats: [
       {
         number: "19 years",
-        text: "Nova is a bubbly and innocent girl with a curious mind and adventurous spirit. She's sweet, naive, and eager to learn about the world around her. Her genuine smile and pure heart make her the perfect companion for discovering new experiences together.",
+        text: "Nova is a bubbly and innocent girl with a curious mind and adventurous spirit. She&apos;s sweet, naive, and eager to learn about the world around her. Her genuine smile and pure heart make her the perfect companion for discovering new experiences together.",
       },
     ],
   },
@@ -126,10 +123,6 @@ const Card = ({ link, background, title, stats }: CardData) => {
               </div>
             ))}
           </div>
-          {/* <Button variant="outline" size="sm" className="w-fit">
-            Read Story
-            <ArrowRight className="size-3.5" />
-          </Button> */}
         </div>
       </div>
     </a>
@@ -144,9 +137,6 @@ const Feature222 = () => {
           <h3 className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
             Popular NSFW AI Chatbot Girls
           </h3>
-          {/* <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-            Discover how our AI technology is transforming industries and creating real impact
-          </p> */}
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {LIST.map((item, i) => (
