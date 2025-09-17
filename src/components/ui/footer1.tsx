@@ -56,7 +56,7 @@ const Footer1 = ({
     url: "https://www.atale.com",
     src: "/atale-logo.svg",
     alt: "Atale Logo",
-    title: "Atale",
+    // title: "Atale",
   },
 }: Footer1Props) => {
   return (
