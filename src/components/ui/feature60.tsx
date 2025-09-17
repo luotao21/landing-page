@@ -1,28 +1,26 @@
 const Feature60 = () => {
   return (
-    <section className="py-32">
+    <section className="py-24">
       <div className="container">
         <div className="lg:flex">
           <div className="lg:w-1/2">
             <div className="mb-6 md:mb-8 lg:mb-0">
               <img
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+                src="/feature-1.webp"
                 alt="placeholder hero"
-                className="aspect-4/3 w-full rounded-md border border-border object-cover"
+                className="aspect-4/3 w-full rounded-xl border border-border object-cover"
               />
             </div>
           </div>
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 2xl:pl-32">
             <div>
               <h3 className="mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
-                Enjoy the Sexy Side of AI
+                An AI That Truly Gets You
               </h3>
               <p className="text-muted-foreground lg:text-lg">
-                If you think you know AI chat platforms, think again. Our AI-based adult chat service takes conversations to steamy new heights. Vanilla conversations are sweet and all, but there’s a whole world of sensual possibilities out there to explore. Whether you’re into playful banter or more mature dialogue, our AI Sex Chat knows how to get things going.
+                If you thought AI chat was predictable, prepare to be surprised. This is where conversations leave the mundane behind, guiding you to explore your bolder side. You'll discover our <a href="https://atale.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Sex Chat</a> feature is more than just code; it's a companion that knows exactly how to respond, whether you're in the mood for playful banter or crave more mature dialogue.              <br />
               <br />
-              <br />
-                A teasing sentence can turn into a flirtatious exchange, and before you know it, the tone shifts into something deeper, hotter, and more personal. It’s not just sexy — it’s responsive in a way that makes it hard to stop.
-              </p>
+               You’ll experience how a simple hint can blossom into an intimate tease. From there, the tone naturally evolves—becoming hotter and deeply personal. The magic of this experience lies not just in the alluring content, but in its keen responsiveness to your every nuance, creating an immersive connection that’s hard to pull away from.              </p>
             </div>
           </div>
         </div>

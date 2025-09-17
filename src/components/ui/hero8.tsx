@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero8 = () => {
   return (
-    <section className="py-32">
+    <section className="py-24">
       <div className="overflow-hidden border-b border-muted">
         <div className="container">
           <div className="mx-auto flex max-w-5xl flex-col items-center">
