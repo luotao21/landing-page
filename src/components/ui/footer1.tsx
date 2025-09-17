@@ -6,7 +6,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import { Logo, LogoImage, LogoText } from "@/components/shadcnblocks/logo";
+import { Logo, LogoImage } from "@/components/shadcnblocks/logo";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 
@@ -48,7 +48,6 @@ interface Footer1Props {
     url: string;
     src: string;
     alt: string;
-    title: string;
   };
 }
 const Footer1 = ({
@@ -56,22 +55,21 @@ const Footer1 = ({
     url: "https://www.atale.com",
     src: "/atale-logo.svg",
     alt: "Atale Logo",
-    // title: "Atale",
   },
 }: Footer1Props) => {
   return (
-    <section className="py-32">
+    <section className="py-24">
       <div className="container">
         <footer>
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
             <Logo url="https://www.atale.com">
-              <LogoImage
+              <Image
                 src={logo.src}
                 alt={logo.alt}
-                // title={logo.title}
-                className="h-8"
+                width={120}
+                height={28}
+                className="max-h-7"
               />
-              <LogoText className="text-xl">{logo.title}</LogoText>
             </Logo>
             <div className="flex flex-col gap-4 md:flex-row md:items-center">
               <p className="text-lg font-medium">
