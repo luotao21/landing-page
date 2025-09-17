@@ -20,7 +20,14 @@ export default function NSFWChatbotPage() {
       <Cta6 />
       <Feature55 />
       <Timeline10 />
-      <Faq3 />
+      <Faq3 
+        heading="Frequently Asked Questions"
+        description="Get answers to the most common questions about Atale AI's NSFW AI Chatbot platform. Still have questions? Our support team is here to help."
+        supportHeading="Need More Help?"
+        supportDescription="Can't find what you're looking for? Our support team is here to assist you with any questions or concerns."
+        supportButtonText="Contact Support"
+        supportButtonUrl="https://atale.ai/support"
+      />
       <Community4 />
     </div>
   );
