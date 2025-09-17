@@ -8,6 +8,7 @@ import {
 
 import { Logo, LogoImage, LogoText } from "@/components/shadcnblocks/logo";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 const sections = [
   {
@@ -87,8 +88,10 @@ const Footer1 = ({
                   href="#"
                   className="bg-primary inline-flex items-center justify-center rounded-lg p-2"
                 >
-                  <img
+                  <Image
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-play-icon.svg"
+                    width={24}
+                    height={24}
                     className="text-background size-6"
                     alt="google play"
                   />

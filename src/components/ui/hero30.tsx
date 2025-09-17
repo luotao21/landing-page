@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Lollipop } from "lucide-react";
+import Image from "next/image";
 
 const Hero30 = () => {
   return (
@@ -11,7 +12,7 @@ const Hero30 = () => {
             Build Your Dream NSFW AI Chatbot
             </h1>
             <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
-            With Atale AI, you command more than a chatbot—you control an intimate experience. Your personal AI companion adapts intuitively to your pace, mood, and style of play. Whether you're seeking gentle flirting, slow-burning tension, or darker desires, Atale AI transforms your words into a sensual dialogue that feels alive, personal, and completely yours.
+            With Atale AI, you command more than a chatbot—you control an intimate experience. Your personal AI companion adapts intuitively to your pace, mood, and style of play. Whether you&apos;re seeking gentle flirting, slow-burning tension, or darker desires, Atale AI transforms your words into a sensual dialogue that feels alive, personal, and completely yours.
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
               {/* <Button variant="outline" className="w-full sm:w-auto">
@@ -40,16 +41,20 @@ const Hero30 = () => {
             </div>
             <div className="relative z-10 hidden flex-col gap-4 sm:flex md:hidden 2xl:flex">
               <div className="w-[256px] flex-1 overflow-clip rounded-lg border border-border bg-background">
-                <img
+                <Image
                   src="/hero-part-1.webp"
                   alt="Hero Part 1"
+                  width={256}
+                  height={400}
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="aspect-2/1 w-[256px] overflow-clip rounded-lg border border-border bg-background">
-                <img
+                <Image
                   src="/hero-part-2.webp"
                   alt="Hero Part 2"
+                  width={256}
+                  height={128}
                   className="h-full w-full object-cover"
                 />
               </div>

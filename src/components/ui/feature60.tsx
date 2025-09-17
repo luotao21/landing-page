@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Feature60 = () => {
   return (
     <section className="py-24">
@@ -5,9 +7,11 @@ const Feature60 = () => {
         <div className="lg:flex">
           <div className="lg:w-1/2">
             <div className="mb-6 md:mb-8 lg:mb-0">
-              <img
+              <Image
                 src="/feature-1.webp"
                 alt="placeholder hero"
+                width={600}
+                height={450}
                 className="aspect-4/3 w-full rounded-xl border border-border object-cover"
               />
             </div>

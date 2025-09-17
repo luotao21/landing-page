@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Lollipop } from "lucide-react";
+import Image from "next/image";
 
 const Cta6 = () => {
   return (
@@ -21,13 +22,13 @@ const Cta6 = () => {
           <div className="absolute right-1/2 bottom-0 mr-6 h-min w-[110%] max-w-md translate-x-1/2 md:-right-36 md:mr-0 md:w-3/4 md:max-w-xl md:translate-x-0 lg:mt-auto xl:relative xl:right-0 xl:h-full xl:w-full xl:max-w-full">
             <div className="relative aspect-8/5 h-full min-h-[16rem] w-full">
               <div className="absolute top-0 right-0 z-40 flex aspect-3/5 w-3/5 -translate-x-[24%] translate-y-[24%] -rotate-[30deg] justify-center overflow-clip rounded-3xl bg-background shadow-2xl shadow-black/40 md:max-xl:-translate-x-[8%] md:max-xl:translate-y-[16%]">
-                <img src="/cta-1.webp" alt="AI Chatbot Girl 4" className="h-full w-full object-cover" />
+                <Image src="/cta-1.webp" alt="AI Chatbot Girl 4" width={300} height={500} className="h-full w-full object-cover" />
               </div>
               <div className="absolute top-0 right-0 z-40 flex aspect-3/5 w-3/5 -translate-x-[16%] translate-y-[8%] -rotate-[15deg] justify-center overflow-clip rounded-3xl bg-background shadow-2xl shadow-black/50 md:max-xl:-translate-x-[6%] md:max-xl:translate-y-[6%]">
-                <img src="/cta-2.webp" alt="AI Chatbot Girl 5" className="h-full w-full object-cover" />
+                <Image src="/cta-2.webp" alt="AI Chatbot Girl 5" width={300} height={500} className="h-full w-full object-cover" />
               </div>
               <div className="absolute top-0 right-0 z-40 flex aspect-3/5 w-3/5 items-center justify-center overflow-clip rounded-3xl bg-background shadow-2xl shadow-black/60">
-                <img src="/cta-3.webp" alt="AI Chatbot Girl 6" className="h-full w-full object-cover" />
+                <Image src="/cta-3.webp" alt="AI Chatbot Girl 6" width={300} height={500} className="h-full w-full object-cover" />
               </div>
             </div>
           </div>

@@ -9,7 +9,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const Timeline10 = () => {
-  const currentPhase = 3;
 
   const timelinePhases = [
     {
@@ -26,7 +25,7 @@ const Timeline10 = () => {
       title: "Chat Away",
       description: "Once you've found or made your match, it's time to ",
       linkText: "Dirty talk with AI",
-      descriptionEnd: "! Engage in cheeky banter, share your desires, or explore your wildest fantasies. Whether you're in the mood for sweet pillow talk or something spicier, your companion is ready to play along.",
+      descriptionEnd: "! Engage in cheeky banter, share your desires, or explore your wildest fantasies. Whether you&apos;re in the mood for sweet pillow talk or something spicier, your companion is ready to play along.",
     },
     {
       id: 2,

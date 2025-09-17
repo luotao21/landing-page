@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
@@ -32,9 +33,11 @@ const Hero8 = () => {
               </div>
             </div>
           </div>
-          <img
+          <Image
             src="/hero.webp"
             alt="hero image"
+            width={1200}
+            height={700}
             className="mx-auto mt-24 max-h-[700px] w-full max-w-7xl rounded-lg object-cover shadow-lg"
           />
         </div>
