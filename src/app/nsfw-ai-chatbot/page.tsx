@@ -7,6 +7,7 @@ import { Cta6 } from "@/components/ui/cta6";
 import { Feature55 } from "@/components/ui/feature55";
 import { Timeline10 } from "@/components/ui/timeline10";
 import { Faq3 } from "@/components/ui/faq3";
+import { Community4 } from "@/components/ui/community4";
 
 export default function NSFWChatbotPage() {
   return (
@@ -20,6 +21,7 @@ export default function NSFWChatbotPage() {
       <Feature55 />
       <Timeline10 />
       <Faq3 />
+      <Community4 />
     </div>
   );
 }
