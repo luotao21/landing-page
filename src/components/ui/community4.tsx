@@ -44,7 +44,7 @@ const Community4 = () => {
   ];
 
   return (
-    <section className="py-32">
+    <section className="py-24">
       <div className="container">
         <div className="flex flex-col items-center gap-2.5 text-center">
           <h2 className="text-4xl font-medium md:text-5xl">

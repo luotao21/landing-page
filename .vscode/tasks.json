@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open PSD in Photoshop 2025",
+      "type": "shell",
+      "command": "open",
+      "args": [
+        "-a",
+        "/Applications/Adobe Photoshop 2025/Adobe Photoshop 2025.app",
+        "${file}"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+

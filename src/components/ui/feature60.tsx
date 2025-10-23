@@ -1,6 +1,22 @@
 import Image from "next/image";
 
-const Feature60 = () => {
+interface Feature60Props {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt: string;
+  linkText: string;
+  linkUrl: string;
+}
+
+const Feature60 = ({ 
+  title,
+  description,
+  imageSrc,
+  imageAlt,
+  linkText,
+  linkUrl
+}: Feature60Props) => {
   return (
     <section className="py-24">
       <div className="container">
@@ -8,8 +24,8 @@ const Feature60 = () => {
           <div className="lg:w-1/2">
             <div className="mb-6 md:mb-8 lg:mb-0">
               <Image
-                src="/feature-1.webp"
-                alt="placeholder hero"
+                src={imageSrc}
+                alt={imageAlt}
                 width={600}
                 height={450}
                 className="aspect-4/3 w-full rounded-xl border border-border object-cover"
@@ -19,12 +35,16 @@ const Feature60 = () => {
           <div className="lg:flex lg:w-1/2 lg:items-center lg:pl-24 2xl:pl-32">
             <div>
               <h3 className="mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
-                An AI That Truly Gets You
+                {title}
               </h3>
-              <p className="text-muted-foreground lg:text-lg">
-                If you thought AI chat was predictable, prepare to be surprised. This is where conversations leave the mundane behind, guiding you to explore your bolder side. You&apos;ll discover our <a href="https://atale.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Sex Chat</a> feature is more than just code; it&apos;s a companion that knows exactly how to respond, whether you&apos;re in the mood for playful banter or crave more mature dialogue.              <br />
-              <br />
-               You&apos;ll experience how a simple hint can blossom into an intimate tease. From there, the tone naturally evolves—becoming hotter and deeply personal. The magic of this experience lies not just in the alluring content, but in its keen responsiveness to your every nuance, creating an immersive connection that&apos;s hard to pull away from.              </p>
+              <p 
+                className="text-muted-foreground lg:text-lg"
+                dangerouslySetInnerHTML={{
+                  __html: description
+                    .replace(/\n/g, '<br>')
+                    .replace(new RegExp(linkText, 'g'), `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary/80 underline">${linkText}</a>`)
+                }}
+              />
             </div>
           </div>
         </div>

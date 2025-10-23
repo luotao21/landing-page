@@ -1,0 +1,11 @@
+{
+  "workbench.editorAssociations": {
+    "*.psd": "default"
+  },
+  "files.associations": {
+    "*.psd": "photoshop"
+  },
+  "workbench.externalOpen": {
+    "*.psd": "openWith"
+  }
+}

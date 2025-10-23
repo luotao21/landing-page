@@ -6,7 +6,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import { Logo, LogoImage } from "@/components/shadcnblocks/logo";
+import { Logo } from "@/components/logo";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 

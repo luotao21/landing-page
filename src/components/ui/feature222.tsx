@@ -12,96 +12,12 @@ interface CardData {
   stats: Array<stat>;
 }
 
-const LIST: Array<CardData> = [
-  {
-    title: "Ellie Williams",
-    link: "#",
-    background: "/ai-chatbot-girls-1.webp",
-    stats: [
-      {
-        number: "22 years",
-        text: "Ellie Williams is a masculine girl, stubborn, jokes like an idiot, she is your bestfriend and dealer. You and Ellie have been best friends since your first semester of college, but Ellie has a certain liking for you...",
-      },
-    ],
-  },
-  {
-    title: "Sophia Chen",
-    link: "#",
-    background: "/ai-chatbot-girls-2.webp",
-    stats: [
-      {
-        number: "21 years",
-        text: "Sophia is a gentle and artistic soul who loves painting and poetry. She&apos;s shy at first but opens up beautifully once you get to know her. Her soft voice and caring nature make her the perfect companion for deep conversations and quiet moments together.",
-      },
-    ],
-  },
-  {
-    title: "Maya Rodriguez",
-    link: "#",
-    background: "/ai-chatbot-girls-3.webp",
-    stats: [
-      {
-        number: "23 years",
-        text: "Maya is a fiery Latina with a passion for dance and adventure. She&apos;s confident, bold, and knows exactly what she wants. Her infectious laugh and playful teasing will keep you on your toes, always ready for the next exciting moment together.",
-      },
-    ],
-  },
-  {
-    title: "Aria Johnson",
-    link: "#",
-    background: "/ai-chatbot-girls-4.webp",
-    stats: [
-      {
-        number: "20 years",
-        text: "Aria is a bookworm with a wild side that only comes out in private. She&apos;s intelligent, mysterious, and has a way with words that can make your heart race. Behind her glasses lies a world of fantasies she&apos;s eager to explore with the right person.",
-      },
-    ],
-  },
-  {
-    title: "Iris Wang",
-    link: "#",
-    background: "/ai-chatbot-girls-5.webp",
-    stats: [
-      {
-        number: "24 years",
-        text: "Luna is a free-spirited girl who loves the night sky and all things mystical. She&apos;s playful, spontaneous, and has a mischievous streak that makes every interaction exciting. Her dreamy eyes and ethereal beauty will captivate you from the first moment.",
-      },
-    ],
-  },
-  {
-    title: "Zoe Thompson",
-    link: "#",
-    background: "/ai-chatbot-girls-6.webp",
-    stats: [
-      {
-        number: "22 years",
-        text: "Zoe is a sporty and energetic girl who loves fitness and outdoor adventures. She&apos;s competitive, determined, and has a body that shows her dedication to health. Her positive energy and athletic grace make her an irresistible companion for active fun.",
-      },
-    ],
-  },
-  {
-    title: "Luna Park",
-    link: "#",
-    background: "/ai-chatbot-girls-7.webp",
-    stats: [
-      {
-        number: "25 years",
-        text: "Iris is a sophisticated and elegant young woman with a taste for the finer things in life. She&apos;s cultured, refined, and knows how to make every moment special. Her graceful movements and intelligent conversation will sweep you off your feet completely.",
-      },
-    ],
-  },
-  {
-    title: "Nova Lee",
-    link: "#",
-    background: "/ai-chatbot-girls-8.webp",
-    stats: [
-      {
-        number: "19 years",
-        text: "Nova is a bubbly and innocent girl with a curious mind and adventurous spirit. She&apos;s sweet, naive, and eager to learn about the world around her. Her genuine smile and pure heart make her the perfect companion for discovering new experiences together.",
-      },
-    ],
-  },
-];
+interface Feature222Props {
+  title: string;
+  characters: Array<CardData>;
+}
+
+// Removed unused LIST constant
 
 const Card = ({ link, background, title, stats }: CardData) => {
   return (
@@ -129,17 +45,17 @@ const Card = ({ link, background, title, stats }: CardData) => {
   );
 };
 
-const Feature222 = () => {
+const Feature222 = ({ title, characters }: Feature222Props) => {
   return (
     <section className="py-24">
       <div className="container px-4 md:px-0">
         <div className="mb-16 text-center">
           <h3 className="mb-4 text-3xl font-bold md:text-4xl lg:text-5xl">
-            Popular NSFW AI Chatbot Girls
+            {title}
           </h3>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {LIST.map((item, i) => (
+          {characters.map((item, i) => (
             <Card key={`feature-222-${i}`} {...item} />
           ))}
         </div>

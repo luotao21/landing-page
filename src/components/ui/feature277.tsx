@@ -14,59 +14,47 @@ import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
 
-const Feature277 = () => {
+interface Feature277Item {
+  title: string;
+  description: string;
+  iconName: string;
+  color: string;
+  bgColor: string;
+}
+
+interface Feature277Props {
+  title: string;
+  items: Feature277Item[];
+}
+
+const Feature277 = ({ title, items }: Feature277Props) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  const items = [
-    {
-      title: "Live Out Any Fantasy",
-      description:
-        "Dive into immersive role-play. Crave a steamy doctor-patient scenario or a secret librarian tryst? Just name the fantasy—your AI partner is ready to play their part instantly and stay perfectly in character.",
-      icon: Sparkle,
-      color: "text-pink-500",
-      bgColor: "bg-pink-500/10",
-    },
-    {
-      title: "Architect Your Ideal Companion",
-      description:
-        "Why settle for pre-made personalities when you can design your own? You have complete creative freedom to sculpt your perfect partner. Define their stunning appearance, select their ideal body type, shape a captivating personality, and even assign their profession. Every detail is under your control.",
-      icon: Heart,
-      color: "text-green-500",
-      bgColor: "bg-green-500/10",
-    },
-    {
-      title: "Intimate Voice, Brought to Life",
-      description:
-        "Experience a deeper connection that goes beyond the screen. Your AI companion has their own unique voice, capable of transforming a message into an intimate moment. Hear your desires spoken aloud, whether in a gentle whisper, a playful giggle, or a deeply sultry tone.",
-      icon: AudioLines,
-      color: "text-sky-500",
-      bgColor: "bg-sky-500/10",
-    },
-    {
-      title: "A Private Gallery of Your Imagination",
-      description:
-        "Bring your fantasies to vivid life. Simply describe any scene, and your AI partner will generate a unique, tantalizing image just for you. From seductive poses to exotic locations, you have the power to direct every visual detail. Your imagination is the only limit.",
-      icon: BookImage,
-      color: "text-green-500",
-      bgColor: "bg-green-500/10",
-    },
-  ];
+  const getIcon = (iconName: string) => {
+    const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
+      Sparkle,
+      AudioLines,
+      BookImage,
+      Heart,
+    };
+    return iconMap[iconName] || Sparkle;
+  };
 
   return (
-    <section className="overflow-hidden py-24">
+    <section className="py-24">
       <div className="container flex w-full flex-col items-center justify-center px-4">
         <h2 className="relative z-20 py-2 text-center font-sans text-5xl font-semibold tracking-tighter md:py-7 lg:text-5xl">
-        What Your Personal NSFW AI Can Do
+        {title}
         </h2>
         {/* <p className="text-md text-muted-foreground mx-auto max-w-xl text-center lg:text-lg">
           Perfectly balanced between performance and customization.
         </p> */}
 
-        <div className="relative mt-10 grid w-full max-w-5xl grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="relative mt-10 grid w-full max-w-5xl grid-cols-1 md:grid-cols-2 lg:grid-cols-2 z-10">
           {items.map((item, idx) => (
             <div
               key={idx}
-              className="group relative block h-full w-full p-2"
+              className="group relative block h-full w-full p-2 overflow-hidden"
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -90,7 +78,7 @@ const Feature277 = () => {
               <Card
                 title={item.title}
                 description={item.description}
-                icon={item.icon}
+                icon={getIcon(item.iconName)}
                 color={item.color}
                 className="flex flex-col items-center justify-center"
               />
@@ -120,7 +108,7 @@ const Card = ({
   return (
     <div
       className={cn(
-        "bg-muted relative z-20 flex h-full flex-col items-center justify-center gap-2 rounded-3xl p-5 text-center",
+        "bg-muted relative z-20 flex h-full flex-col items-center justify-center gap-2 rounded-3xl p-6 text-center overflow-hidden",
         className,
       )}
     >
@@ -133,7 +121,7 @@ const Card = ({
         <Icon />
       </div>
       <h1 className="text-xl font-medium tracking-tight">{title}</h1>
-      <p className="text-muted-foreground text-center text-sm">{description}</p>
+      <p className="text-muted-foreground text-left text-sm">{description}</p>
 
       <Button
         variant="ghost"

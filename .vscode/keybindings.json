@@ -1,0 +1,9 @@
+[
+  {
+    "key": "cmd+shift+p",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Open PSD in Photoshop 2025",
+    "when": "resourceExtname == '.psd'"
+  }
+]
+

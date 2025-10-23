@@ -5,12 +5,7 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
-import {
-  ContextMenu,
-  ContextMenuContent,
-  ContextMenuItem,
-  ContextMenuTrigger,
-} from "@/components/ui/context-menu";
+// Context menu component removed - using simple div instead
 
 interface LogoProps extends React.HTMLAttributes<HTMLAnchorElement> {
   url: string;
@@ -64,23 +59,21 @@ const LogoBrandDownload = ({
   };
 
   return (
-    <ContextMenu>
-      <ContextMenuTrigger asChild>
-        <div className={cn("inline-block", className)}>{children}</div>
-      </ContextMenuTrigger>
-      <ContextMenuContent className="w-48">
+    <div className={cn("inline-block", className)}>
+      {children}
+      <div className="w-48">
         {files.map((file) => (
-          <ContextMenuItem
+          <div
             key={file.path}
             onClick={() => handleDownload(file)}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center p-2 hover:bg-muted rounded"
           >
             <Download className="mr-2 h-4 w-4" />
             Download {file.format.toUpperCase()}
-          </ContextMenuItem>
+          </div>
         ))}
-      </ContextMenuContent>
-    </ContextMenu>
+      </div>
+    </div>
   );
 };
 
